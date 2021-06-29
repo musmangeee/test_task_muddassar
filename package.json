@@ -1,0 +1,43 @@
+{
+  "name": "restaurants-management",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "clean": "rm -rfv ./dist && rm -rfv ./.nuxt && rm .env -rfv && rm -rfv ./static/sw.js",
+    "clean-dev": "yarn clean && cp .env.local .env -rfv && yarn dev",
+    "clean-build": "yarn clean && cp .env.server .env -rfv && yarn build",
+    "clean-build-local": "yarn clean && cp .env.local .env -rfv && yarn build",
+    "clean-build-digidoe": "yarn clean && cp .env.digidoe.server .env -rfv && yarn build",
+    "clean-build-nbthub": "yarn clean && cp .env.nbthub.server .env -rfv && yarn build"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1620773067.c356fed",
+    "@nuxtjs/axios": "^5.13.4",
+    "@nuxtjs/proxy": "^2.1.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/toast": "^3.3.1",
+    "core-js": "^3.12.1",
+    "device-uuid": "^1.0.4",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.6",
+    "strip-ansi": "^7.0.0",
+    "v-idle": "^0.2.1",
+    "v-mask": "^2.2.4",
+    "vue-qr": "^2.4.0",
+    "vuetify": "^2.5.0",
+    "vuetify-image-input": "^19.2.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "prettier": "^2.3.0",
+    "sass": "^1.32.11",
+    "sass-loader": "10"
+  }
+}
