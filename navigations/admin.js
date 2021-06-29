@@ -41,4 +41,11 @@ export default context => ([{
     icon: `mdi-table`,
     inNav: true,
   },
+  {
+    to: `/dashboard/${roleName}/orders`,
+    name: `orders`,
+    title: `Order`,
+    icon: `mdi-silverware`,
+    inNav: true,
+  },
 ]);
